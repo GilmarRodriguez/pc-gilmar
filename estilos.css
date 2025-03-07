@@ -1,14 +1,54 @@
 .contenedor1 {
     width: 100%;
-    height: 100%;
-    display: flex;
+    height: auto;
     justify-content: center;
     align-items: center;
-    background-color: #f2f2f2;
+    background-color: #543a3a;
+    border: #000 2px solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
 
+    
+    "h1 libros autores generos biblioteca"
+    
 }
+
 .contenedor1 div {
-    width: 100px;
+    color: #fff;
+    border-radius: 1rem;
+    text-align: center;
+    width: auto;
     height: 100px;
     background-color: #f00;
+    border: #000 2px solid;
+    align-content: center;  
+    margin-top: 10px; 
+}
+.contenedor1 div a {
+    color: #000;
+    text-decoration: none;
+}
+.contenedor1 h1 {
+    color: #fff;
+    text-align: center;
+    grid-area: h1;
+}
+.itemlibros{
+          grid-area: libros;
+}
+.itemautores{
+          grid-area: autores;
+}
+.itemgeneros{
+          grid-area: generos;
+}   
+.itembiblioteca{
+    grid-area: biblioteca;
+}
+
+body {
+
+    background-color: #000;
 }
